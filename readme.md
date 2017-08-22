@@ -8,7 +8,7 @@ As of writing of this article, this feature is in "Technology Preview" in OpenSh
 
 * To test this concept, you have to install an OpenShift Cluster with `redhat/openshift-ovs-networkpolicy` using `os_sdn_network_plugin_name` in the ansible hosts file or enable network policy in an existing cluster as explained here [https://docs.openshift.com/container-platform/3.6/admin_guide/managing_networking.html#admin-guide-networking-networkpolicy](https://docs.openshift.com/container-platform/3.6/admin_guide/managing_networking.html#admin-guide-networking-networkpolicy)
 
-###Understanding Sample Application	
+### Understanding Sample Application	
 
 To look at a practical example that show cases Network Policy Objects, we'll use a sample application that is made up of a bunch of microservices from this git repository [https://github.com/VeerMuchandi/microservices-on-openshift](https://github.com/VeerMuchandi/microservices-on-openshift). 
 
@@ -33,7 +33,7 @@ The deployment model for these microservices and the expected interations (in or
 
 ![](microservices_architecture.png)
 
-###Deploy the application
+### Deploy the application
 
 **Prerequisites**	 
 
@@ -394,7 +394,7 @@ networkpolicy "allow-8080-frontend" created
 Now we are all set. We have policies in place that prevent services crossing boundaries!!
 
 
-###Summary
+### Summary
 
 In this article we have learnt with examples:
 
