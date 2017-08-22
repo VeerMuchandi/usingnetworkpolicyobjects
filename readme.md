@@ -360,8 +360,8 @@ networkpolicy "default-deny" created
 First we will need a label to identify the (traffic) source project `msservices`. Your cluster-admin may have to do this.
 
 ```
-# oc label namespace msinfra project=userregservices
-namespace "msinfra" labeled
+# oc label namespace msservices project=userregservices
+namespace "msservices" labeled
 
 ```
 
@@ -391,7 +391,7 @@ networkpolicy "allow-8080-emailsvc" created
 
 ```
 
-Now we are all set. We have policies in place that prevent services crossing boundaries!!
+Now we are all set. We have policies in place that prevent services crossing boundaries. Test the application to make sure the calls between microservices are all going through.
 
 
 ### Summary
