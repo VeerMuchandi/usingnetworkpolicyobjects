@@ -227,6 +227,8 @@ The server didn't respond in time.
 
 Let's add more policies now.
 
+**Note** You can clone this git repository to download all these policy files. [https://github.com/VeerMuchandi/usingnetworkpolicyobjects](https://github.com/VeerMuchandi/usingnetworkpolicyobjects)
+
 * Completely deny all traffic to `msclient` project
 
 ```
