@@ -146,7 +146,7 @@ So far we just deployed a few microservices and used them on OpenShift.
 
 **Now we will see why we need Network Policy Objects**
 
-We have a hack in the Frontend Service code. If you access your <<front-endurl>>/hack.php, it talks to the MySQLDB in the `msinfra` project and pull all the data and show as below.
+We have a hack in the Frontend Service code. If you access your ***front-endurl***/hack.php, it talks to the MySQLDB in the `msinfra` project, pulls all the data and shows as below.
 
 ```
 $ curl http://userreg-msclient.apps.devday.ocpcloud.com/hack.php
