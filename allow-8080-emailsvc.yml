@@ -1,11 +1,11 @@
 kind: NetworkPolicy
 apiVersion: extensions/v1beta1
 metadata:
-  name: allow-8080-frontend 
+  name: allow-8080-emailsvc 
 spec:
   podSelector:
     matchLabels:
-      app: userreg
+      app: emailsvc
   ingress:
   - from: 
     - namespaceSelector:

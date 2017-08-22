@@ -372,11 +372,11 @@ $ cat allow-8080-emailsvc.yml
 kind: NetworkPolicy
 apiVersion: extensions/v1beta1
 metadata:
-  name: allow-8080-frontend 
+  name: allow-8080-emailsvc 
 spec:
   podSelector:
     matchLabels:
-      app: userreg
+      app: emailsvc
   ingress:
   - from: 
     - namespaceSelector:
@@ -387,7 +387,7 @@ spec:
       port: 8080
       
 $ oc create -f allow-8080-emailsvc.yml -n msinfra
-networkpolicy "allow-8080-frontend" created
+networkpolicy "allow-8080-emailsvc" created
 
 ```
 
